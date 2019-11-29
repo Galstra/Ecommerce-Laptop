@@ -72,7 +72,7 @@
                     <div class="image"><a href="<?= site_url('produk') ?>"><img src="<?php echo base_url().'/assets/img/'.$brg->gambar?>"class="img-fluid image1"></a></div>
                     <div class="text">
                       <h3 class="h5"><?php echo $brg->merk_barang ?> </h3>
-                      <p class="price"><?php echo $brg->harga_barang?> </p>
+                      <p class="price"><?php echo $brg->harga?> </p>
                     </div>
                   </div>
                 </div>

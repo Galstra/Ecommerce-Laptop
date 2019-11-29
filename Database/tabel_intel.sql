@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 24 Nov 2019 pada 12.57
--- Versi server: 10.1.36-MariaDB
--- Versi PHP: 5.6.38
+-- Generation Time: Nov 29, 2019 at 03:48 PM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,24 +25,24 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tabel_intel`
+-- Table structure for table `tabel_intel`
 --
 
 CREATE TABLE `tabel_intel` (
   `id_barang` int(11) NOT NULL,
   `merk_barang` varchar(120) NOT NULL,
-  `harga_barang` varchar(200) NOT NULL,
+  `harga` varchar(200) NOT NULL,
   `keterangan` text NOT NULL,
   `stock` int(10) NOT NULL,
   `gambar` text NOT NULL,
-  `gambar2` text NOT NULL
+  `gambar_2` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tabel_intel`
+-- Dumping data for table `tabel_intel`
 --
 
-INSERT INTO `tabel_intel` (`id_barang`, `merk_barang`, `harga_barang`, `keterangan`, `stock`, `gambar`, `gambar2`) VALUES
+INSERT INTO `tabel_intel` (`id_barang`, `merk_barang`, `harga`, `keterangan`, `stock`, `gambar`, `gambar_2`) VALUES
 (1, 'HP Core i5 14s-CF2005TX(Gold)', 'Rp8.249.000', 'Operating system: Windows 10 Home Single Language 64\r\nProsesor: Intel® Core™ i5-10210U (1.6 GHz base frequency, up to 4.2 GHz base with Intel® Turbo Boost Technology, 6 MB cache, 4 cores)\r\nProcessor family: 10th Generation Intel® Core™ i5 processor\r\nChipset: Intel® Integrated SoC\r\nForm factor: Standard laptop\r\nMemory: 4 GB DDR4-2666 SDRAM (1 x 4 GB)\r\nMemory Note: Transfer rates up to 2666 MT/s.\r\nInternal storage: 1 TB 5400 rpm SATA\r\nStorage type: HDD\r\nDisplay: 14\" diagonal HD SVA BrightView micro-edge WLED-backlit (1366 x 768)\r\nGraphics: AMD Radeon™ 530 Graphics (2 GB GDDR5 dedicated)\r\nPorts: 1 HDMI 1.4; 1 headphone/microphone combo; 1 RJ-45; 1 AC smart pin; 2 USB 3.1 Gen 1 Type-A (Data Transfer Only); 1 USB 3.1 Gen 1 Type-C™ (Data Transfer Only, 5 Gb/s signaling rate)\r\nExpansion slots: 1 multi-format SD media card reader\r\nAudio features: Dual speakers\r\nWebcam: HP TrueVision HD Camera with integrated digital microphone\r\nPointing device: Touchpad with multi-touch gesture support; Precision Touchpad Support\r\nKeyboard: Full-size island-style ash silver backlit keyboard\r\nNetwork interface: Integrated 10/100/1000 GbE LAN\r\nWireless: Realtek 802.11 a/b/g/n/ac (1x1) Wi-Fi® and Bluetooth® 4.2 Combo\r\nWireless note: Miracast compatible\r\nPower supply type: 65 W AC power adapter\r\nBattery type: 3-cell, 41 Wh Li-ion\r\nBattery weight: 210 g\r\nEnergy Efficiency Compliance: ENERGY STAR® certified; EPEAT® Silver registered\r\nDimensions without stand (W x D x H): 32.4 x 22.59 x 1.99 cm\r\nDimension note (metric): Dimensions vary by configuration\r\nBerat: Starting at 1.43 kg\r\nWeight note (metric): Weight varies by configuration\r\nProduct color: Gold\r\nSecurity management: Kensington Mini Security slot™\r\nHP apps: HP Audio Switch; HP Documentation; HP ePrint; HP e-Service; HP JumpStart; HP Recovery Manager; HP Support Assistant; HP Connection Optimizer\r\nSoftware included: McAfee LiveSafe™\r\nPre-installed software: Netflix (30-day free trial offer)\r\nSoftware - Productivity & finance: 1 month trial for new Microsoft Office 365 customers\r\nJaminan: 1 year limited parts and labour\r\n', 10, '14s-CF2005TX(Gold).jpg', '14s-CF2005TX(Gold) 2.jpg'),
 (2, 'HP Pavilion Core i7 14-CE2013TX(White)', 'RP13.699.000', 'Operating system: Windows 10 Home Single Language 64\r\nProsesor: Intel® Core™ i7-8565U (1.8 GHz base frequency, up to 4.6 GHz with Intel® Turbo Boost Technology, 8 MB cache, 4 cores)\r\nProcessor family: 8th Generation Intel® Core™ i7 processor\r\nChipset: Intel® Integrated SoC\r\nForm factor: Standard laptop\r\nMemory: 8 GB DDR4-2400 SDRAM (1 x 8 GB)\r\nMemory Note: Transfer rates up to 2400 MT/s.\r\nInternal storage: 1 TB 5400 rpm SATA\r\nHard drive (2nd): 256 GB PCIe® NVMe™ M.2 SSD\r\nStorage type: SSD; HDD\r\nCloud service: Dropbox\r\nDisplay: 14\" diagonal FHD IPS anti-glare micro-edge WLED-backlit (1920 x 1080)\r\nGraphics: NVIDIA® GeForce® MX250 (2 GB GDDR5 dedicated)\r\nPorts: 1 USB 3.1 Gen 1 Type-C™ (Data Transfer Only, 5 Gb/s signaling rate); 2 USB 3.1 Gen 1 Type-A (Data Transfer Only); 1 RJ-45; 1 AC smart pin; 1 HDMI; 1 headphone/microphone combo\r\nExpansion slots: 1 multi-format SD media card reader\r\nAudio features: B&O, dual speakers, HP Audio Boost\r\nWebcam: HP Wide Vision HD Camera with integrated dual array digital microphone\r\nSensors: Accelerometer\r\nPointing device: HP Imagepad with multi-touch gesture support\r\nKeyboard: Full-size island-style natural silver backlit keyboard\r\nNetwork interface: Integrated 10/100/1000 GbE LAN\r\nWireless: Intel® Wireless-AC 9560 802.11a/b/g/n/ac (2x2) Wi-Fi® and Bluetooth® 5 Combo\r\nWireless note: MU-MIMO supported; Miracast compatible\r\nPower supply type: 65 W AC power adapter\r\nBattery type: 3-cell, 41 Wh Li-ion\r\nBattery weight: 210 g\r\nEnergy Efficiency Compliance: ENERGY STAR® certified; EPEAT® Silver registered\r\nDimensions without stand (W x D x H): 32.68 x 22.55 x 1.79 cm\r\nDimension note (metric): Dimensions vary by configuration\r\nBerat: Starting at 1.6 kg\r\nPackage weight: 2.99 kg\r\nProduct color: White & Gold\r\nSecurity management: Kensington Nano Security Slot™; Fingerprint reader\r\nHP apps: HP Audio Switch; HP CoolSense; HP Documentation; HP ePrint; HP JumpStart; HP Support Assistant; HP Connection Optimizer; HP Privacy Settings; HP BIOS Recovery\r\nSoftware included: McAfee LiveSafe™\r\nJaminan: 1 year limited parts and labour\r\n', 10, '14-CE2013TX(White).png', '14-CE2013TX(White) 2.png'),
 (3, 'HP Pavilion x360 Core i7 14 DH1006TX(Gold)', 'RP14.699.000', 'Operating system: Windows 10 Home Single Language 64\r\nProsesor: Intel® Core™ i7-10510U (1.8 GHz base frequency, up to 4.9 GHz base with Intel® Turbo Boost Technology, 8 MB cache, 4 cores)\r\nProcessor family: 10th Generation Intel® Core™ i7 processor\r\nChipset: Intel® Integrated SoC\r\nForm factor: Convertible\r\nMemory: 8 GB DDR4-2666 SDRAM (1 x 8 GB)\r\nMemory Note: Transfer rates up to 2666 MT/s.\r\nInternal storage: 512 GB PCIe® NVMe™ M.2 SSD\r\nStorage type: SSD\r\nCloud service: Dropbox\r\nDisplay: 14\" diagonal FHD IPS anti-glare micro-edge WLED-backlit touch screen (1920 x 1080)\r\nGraphics: NVIDIA® GeForce® MX250 (2 GB GDDR5 dedicated)\r\nPorts: 1 USB 3.1 Gen 1 Type-C™ (Data Transfer Only, 5 Gb/s signaling rate); 2 USB 3.1 Gen 1 Type-A (Data Transfer Only); 1 AC smart pin; 1 HDMI 1.4; 1 headphone/microphone combo\r\nExpansion slots: 1 multi-format SD media card reader\r\nAudio features: B&O, dual speakers, HP Audio Boost\r\nWebcam: HP Wide Vision HD Camera with integrated dual array digital microphone\r\nSensors: Accelerometer; Gyroscope; eCompass\r\nPointing device: HP Imagepad with multi-touch gesture support; Precision Touchpad Support\r\nKeyboard: Full-size island-style luminous gold backlit keyboard\r\nWireless: 802.11ac (1x1) Wi-Fi® and Bluetooth® 4.2 combo\r\nWireless note: MU-MIMO supported; Miracast compatible\r\nPower supply type: 65 W Smart AC power adapter\r\nBattery type: 3-cell, 41 Wh Li-ion\r\nBattery weight: 210 g\r\nEnergy Efficiency Compliance: ENERGY STAR® certified; EPEAT® Silver registered\r\nDimensions without stand (W x D x H): 32.4 x 22.29 x 1.97 cm\r\nDimension note (metric): Dimensions vary by configuration\r\nBerat: Starting at 1.58 kg\r\nWeight note (metric): Weight varies by configuration\r\nProduct color: Warm Gold & Silver\r\nSecurity management: Kensington Nano Security Slot™; Fingerprint reader\r\nHP apps: HP 3D DriveGuard; HP Audio Switch; HP JumpStart; HP CoolSense; HP Documentation; HP Support Assistant; HP Connection Optimizer; HP Privacy Settings\r\nSoftware included: McAfee LiveSafe™\r\nPre-installed software: B&O Audio; Amazon Alexa on Windows\r\nJaminan: 1 year limited parts and labour', 10, '14-DH1006TX(Gold) 1.png', '14-DH1006TX(Gold) 2.png'),
@@ -62,17 +62,17 @@ INSERT INTO `tabel_intel` (`id_barang`, `merk_barang`, `harga_barang`, `keterang
 --
 
 --
--- Indeks untuk tabel `tabel_intel`
+-- Indexes for table `tabel_intel`
 --
 ALTER TABLE `tabel_intel`
   ADD PRIMARY KEY (`id_barang`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `tabel_intel`
+-- AUTO_INCREMENT for table `tabel_intel`
 --
 ALTER TABLE `tabel_intel`
   MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
