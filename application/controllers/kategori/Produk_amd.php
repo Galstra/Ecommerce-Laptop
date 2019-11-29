@@ -5,10 +5,12 @@
     }
     public function index(){
 
+        $data['judul'] = 'AMD';
         $list['barang']= $this->model_amd->tampil_data()->result();
+        
         $this->load->view('partial/navbar');
         $this->load->view('partial/topbar');
-        $this->load->view('partial/header');
+        $this->load->view('partial/header',$data);
         $this->load->view('kategori/produk_amd', $list);
         $this->load->view('partial/footer');
     }
