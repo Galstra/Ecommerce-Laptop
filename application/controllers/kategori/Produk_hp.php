@@ -15,7 +15,9 @@
     }
     public function subDetail($id_brg){
 
-        $data['judul'] = 'HP';
+
+        $data['judul'] = 'Halaman HP';
+
         $list['barang']= $this->model_hp->get_data($id_brg);
 
         $this->load->view('partial/navbar');
