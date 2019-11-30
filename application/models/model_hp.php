@@ -11,5 +11,5 @@ class Model_hp extends CI_model{
         $query = "SELECT * FROM tabel_hp WHERE id_barang = '".$id_brg."'";
         return $this->db->query($query)->row();
     }
-}
+
 ?>
