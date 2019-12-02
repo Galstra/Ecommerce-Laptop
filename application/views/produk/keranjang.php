@@ -47,17 +47,19 @@
                         </tr>
                       </thead>
                       <tbody>
+                      <?php foreach ($barang as $brg) : ?>
                         <tr>
                           <td><a href="shop-detail 14s-CF2005TX(Gold).html"><img src="img/14s-CF2005TX(Gold).jpg" alt="14S-CF2005TX(GOLD)" class="img-fluid"></a></td>
-                          <td><a href="shop-detail 14s-CF2005TX(Gold).html">14S-CF2005TX(GOLD)</a></td>
+                          <td><a href="shop-detail 14s-CF2005TX(Gold).html"><?php echo $brg ->merk_barang ?></a></td>
                           <td>
                             <input type="number" value="1" class="form-control">
                           </td>
-                          <td>Rp8.249.000</td>
+                          <td>Rp<?php echo $brg->harga ?> </td>
                           <td>$0.00</td>
                           <td>Rp8.249.000</td>
                           <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
                         </tr>
+                        <?php endforeach;?>
                       </tbody>
                       <tfoot>
                         <tr>

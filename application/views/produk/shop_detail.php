@@ -87,7 +87,7 @@
                               </div>
                               <p class="price"><?php echo $barang->harga ?></p>
                               <p class="text-center">
-                                <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                               <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> <a href= "<?php echo base_url () ?>keranjang/addcart/<?php echo  $barang->id_barang ?>?"> Add to cart</a></button>
                                 <button type="submit" data-toggle="tooltip" data-placement="top" title="Add to wishlist" class="btn btn-default"><i class="fa fa-heart-o"></i></button>
                               </p>
                             </form>
