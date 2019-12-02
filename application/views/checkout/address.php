@@ -78,9 +78,9 @@
                     </div>
                   </div>
                   <div class="box-footer d-flex flex-wrap align-items-center justify-content-between">
-                    <div class="left-col"><a href="shop-basket.html" class="btn btn-secondary mt-0"><i class="fa fa-chevron-left"></i>Back to basket</a></div>
+                    <div class="left-col"><a href="<?php echo base_url('keranjang')?>" class="btn btn-secondary mt-0"><i class="fa fa-chevron-left"></i>Back to basket</a></div>
                     <div class="right-col">
-                      <button type="submit" class="btn btn-template-main">Continue to Delivery Method<i class="fa fa-chevron-right"></i></button>
+                    <a href="<?php echo base_url ('checkout/deliver')?>" class="btn btn-secondary mt-0"><i class="fa fa-chevron-right"></i>Continue to deliver</a>
                     </div>
                   </div>
                 </form>
