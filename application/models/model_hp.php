@@ -12,5 +12,6 @@ class Model_hp extends CI_model{
         return $this->db->query($query)->row();
     }
 
+
 }
 ?>

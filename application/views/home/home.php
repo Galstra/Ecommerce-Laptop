@@ -18,6 +18,7 @@
                         <li class="nav-item"><a href="<?php echo base_url('kategori/produk_msi')?>" class="nav-link">MSI</a></li>
                       </ul>
                     </li>
+
                     <li class="nav-item"><a href="#" class="nav-link  d-flex align-items-center justify-content-between"><span>Spesification</span><span class="badge badge-light"></span></a>
                       <ul class="nav nav-pills flex-column">
                         <li class="nav-item"><a href="<?php echo base_url('kategori/lowspec')?>" class="nav-link">Low Spesification</a></li>
@@ -25,7 +26,9 @@
                         <li class="nav-item"><a href="<?php echo base_url('kategori/highspec')?>" class="nav-link">High Spesification</a></li>
                       </ul>
                     </li>
+
                     <li class="nav-item"><a href="#" class="nav-link d-flex align-items-center justify-content-between"><span>Processor</span><span class="badge badge-secondary"></span></a>
+
                       <ul class="nav nav-pills flex-column">
                         <li class="nav-item"><a href="<?php echo base_url('kategori/produk_intel')?>" class="nav-link">Intel</a></li>
                         <li class="nav-item"><a href="<?php echo base_url('kategori/produk_amd')?>" class="nav-link">AMD</a></li>

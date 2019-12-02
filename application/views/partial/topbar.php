@@ -13,6 +13,7 @@
                   <li class="list-inline-item"><a href="#"><i class="fa fa-envelope"></i></a></li>
                 </ul>
                 <div class="login"><a href="#" data-toggle="modal" data-target="#login-modal" class="login-btn"><i class="fa fa-sign-in"></i><span class="d-none d-md-inline-block">Sign In</span></a><a href="<?php echo base_url('customer/customer_register')?>" class="signup-btn"><i class="fa fa-user"></i><span class="d-none d-md-inline-block">Sign Up</span></a></div>
+
               </div>
             </div>
             <?php else : ?>
@@ -23,6 +24,7 @@
                   <li class="list-inline-item"><a href="#"><i class="fa fa-envelope"></i></a></li>
                 </ul>
                 <div class="login"><a href="#" class="login-btn"><i class="fa fa-sign-in"></i><span class="d-none d-md-inline-block">HAI <?= $this->session->nama ?> </span></a><a href="<?php echo base_url('login/logout')?>" class="signup-btn"><i class="fa fa-user"></i><span class="d-none d-md-inline-block">Log out</span></a></div>
+
               </div>
             </div>
             <?php endif ?>

@@ -45,14 +45,14 @@
                         <li class="nav-item"><a href="<?php echo base_url('kategori/produk_msi')?>" class="nav-link">MSI</a></li>
                       </ul>
                     </li>
-                    <li class="nav-item"><a href="#" class="nav-link  d-flex align-items-center justify-content-between"><span>Spesification</span><span class="badge badge-light"></span></a>
+                    <li class="nav-item"><a href="<?php echo base_url('home')?>" class="nav-link  d-flex align-items-center justify-content-between"><span>Spesification</span><span class="badge badge-secondary"></span></a>
                       <ul class="nav nav-pills flex-column">
                         <li class="nav-item"><a href="<?php echo base_url('kategori/lowspec')?>" class="nav-link">Low Spesification</a></li>
                         <li class="nav-item"><a href="<?php echo base_url('kategori/medspec')?>" class="nav-link">Mid Specification</a></li>
                         <li class="nav-item"><a href="<?php echo base_url('kategori/highspec')?>" class="nav-link">High Spesification</a></li>
                       </ul>
                     </li>
-                    <li class="nav-item"><a href="#" class="nav-link d-flex align-items-center justify-content-between"><span>Processor</span><span class="badge badge-secondary"></span></a>
+                    <li class="nav-item"><a href="<?php echo base_url('home')?>" class="nav-link d-flex align-items-center justify-content-between"><span>Processor</span><span class="badge badge-secondary"></span></a>
                       <ul class="nav nav-pills flex-column">
                         <li class="nav-item"><a href="<?php echo base_url('kategori/produk_intel')?>" class="nav-link">Intel</a></li>
                         <li class="nav-item"><a href="<?php echo base_url('kategori/produk_amd')?>" class="nav-link">AMD</a></li>
@@ -69,7 +69,7 @@
               <?php foreach ($barang as $brg) : ?>
                 <div class="col-lg-4 col-md-6">
                   <div class="product">
-                    <div class="image"><a href="<?= site_url('produk') ?>"><img src="<?php echo base_url().'/assets/img/'.$brg->gambar?>"class="img-fluid image1"></a></div>
+                    <div class="image"><a href="<?php echo base_url()?>kategori/produk_amd/subDetail/<?= $brg->id_barang ?>"><img src="<?php echo base_url().'/assets/img/'.$brg->gambar?>"class="img-fluid image1"></a></div>
                     <div class="text">
                       <h3 class="h5"><?php echo $brg->merk_barang ?> </h3>
                       <p class="price"><?php echo $brg->harga?> </p>
