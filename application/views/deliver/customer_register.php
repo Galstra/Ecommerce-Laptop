@@ -1,3 +1,4 @@
+
  <div id="all">
       <!-- Login Modal-->
       <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true" class="modal fade">
@@ -49,8 +50,13 @@
                     <label for="password-login">Kata Sandi</label>
                     <input id="password-login" type="password" class="form-control">
                   </div>
+                  <div class="form-group">
+                    <label for="password-login">chek ulangSandi</label>
+                    <input id="password-login" type="password2" class="form-control">
+                  </div>
                   <div class="text-center">
                     <button type="submit" class="btn btn-template-outlined"><i class="fa fa-user-md"></i> Daftar</button>
+                  
                   </div>
                 </form>
               </div>
