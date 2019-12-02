@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 29, 2019 at 04:00 PM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.9
+-- Waktu pembuatan: 02 Des 2019 pada 18.47
+-- Versi server: 10.1.36-MariaDB
+-- Versi PHP: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tabel_asus`
+-- Struktur dari tabel `tabel_asus`
 --
 
 CREATE TABLE `tabel_asus` (
@@ -39,7 +39,7 @@ CREATE TABLE `tabel_asus` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tabel_asus`
+-- Dumping data untuk tabel `tabel_asus`
 --
 
 INSERT INTO `tabel_asus` (`id_barang`, `merk_barang`, `harga`, `keterangan`, `stok`, `gambar`, `gambar_2`) VALUES
@@ -50,17 +50,17 @@ INSERT INTO `tabel_asus` (`id_barang`, `merk_barang`, `harga`, `keterangan`, `st
 --
 
 --
--- Indexes for table `tabel_asus`
+-- Indeks untuk tabel `tabel_asus`
 --
 ALTER TABLE `tabel_asus`
   ADD PRIMARY KEY (`id_barang`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tabel_asus`
+-- AUTO_INCREMENT untuk tabel `tabel_asus`
 --
 ALTER TABLE `tabel_asus`
   MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;

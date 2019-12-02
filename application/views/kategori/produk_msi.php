@@ -69,7 +69,7 @@
               <?php foreach ($barang as $brg) : ?>
                 <div class="col-lg-4 col-md-6">
                   <div class="product">
-                    <div class="image"><a href="<?= site_url('produk') ?>"><img src="<?php echo base_url().'/assets/img/'.$brg->gambar?>"class="img-fluid image1"></a></div>
+                    <div class="image"><a href="<?php echo base_url()?>kategori/produk_msi/subDetail/<?= $brg->id_barang ?>"><img src="<?php echo base_url().'/assets/img/'.$brg->gambar?>"class="img-fluid image1"></a></div>
                     <div class="text">
                       <h3 class="h5"><?php echo $brg->merk_barang ?> </h3>
                       <p class="price"><?php echo $brg->harga?> </p>
