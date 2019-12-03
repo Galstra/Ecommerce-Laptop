@@ -103,7 +103,7 @@
                         <p></p>
                         <h4>Product Specifications</h4>
                         <p>
-                          <?php echo $barang->keterangan?>
+                          <?php echo str_replace('|','.<br>',$barang->keterangan) ?>
                         </p>
                         <blockquote class="blockquote">
                           <p class="mb-0"><em>Define style this season with Armani's new range of trendy tops, crafted with intricate details. Create a chic statement look by teaming this lace number with skinny jeans and pumps.</em></p>

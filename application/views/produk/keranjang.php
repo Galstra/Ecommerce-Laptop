@@ -53,13 +53,13 @@
                         ?>
                         <tr>
                           <td><a href="shop-detail 14s-CF2005TX(Gold).html"><img src="<?php echo base_url ('assets/img/'.$brg->gambar) ?>" alt="" class="img-fluid"></a></td>
-                          <td><a href="shop-detail 14s-CF2005TX(Gold).html"><?php echo $brg ->merk_barang ?></a></td>
+                          <td><a href="shop-detail 14s-CF2005TX(Gold).html"><?php echo $brg->merk_barang ?></a></td>
                           <td>
                             <input type="number" value="1" class="form-control">
                           </td>
-                          <td><?php $harga=number_format($brg->harga,0,",","."); echo $harga ?> </td>
+                          <td>Rp<?php $harga=number_format($brg->harga,0,",","."); echo $harga ?> </td>
                           <td>$0.00</td>
-                          <td><?php echo $brg->harga ?></td>
+                          <td>Rp  <?php $harga=number_format($brg->harga,0,",","."); echo $harga ?></td>
                           <td><a href="<?php echo base_url () ?>keranjang/hapuscart/<?php echo  $brg->id_barang ?>" ><i class="fa fa-trash-o"></i></a></td>
                         </tr>
                         <?php endforeach;?>
@@ -67,7 +67,7 @@
                       <tfoot>
                         <tr>
                           <th colspan="5">Total</th>
-                          <th colspan="2"><?php $harga=number_format($total,0,",","."); echo $harga ?></th>
+                          <th colspan="2">Rp<?php $harga=number_format($total,0,",","."); echo $harga ?></th>
                         </tr>
                       </tfoot>
                     </table>
@@ -75,7 +75,7 @@
                   <div class="box-footer d-flex justify-content-between align-items-center">
                     <div class="left-col"><a href="<?php echo base_url ('home')?>" class="btn btn-secondary mt-0"><i class="fa fa-chevron-left"></i> Continue shopping</a></div>
                     <div class="right-col">
-                      <button class="btn btn-secondary"><i class="fa fa-refresh"></i> Update cart</button>
+                      
                       <a href="<?php echo base_url('checkout/address')?>" class="btn btn-secondary mt-0"><i class="fa fa-chevron-right"></i> Proceed to Checkout</a>
                     </div>
                   </div>

@@ -5,7 +5,7 @@
     }
     public function index(){
         $data['judul'] = 'HP';
-        $list['barang']= $this->model_hp->tampil_datahp()->result();
+        $list['barang']= $this->model_barang->get_merk('HP');
 
         $this->load->view('partial/navbar');
         $this->load->view('partial/topbar');
@@ -19,7 +19,7 @@
 
         $data['judul'] = 'Halaman HP';
 
-        $list['barang']= $this->model_hp->get_data($id_brg);
+        $list['barang']= $this->model_barang->get_data($id_brg);
 
         $this->load->view('partial/navbar');
         $this->load->view('partial/topbar');
