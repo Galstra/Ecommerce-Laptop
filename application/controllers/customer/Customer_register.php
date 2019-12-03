@@ -6,12 +6,11 @@
     public function index(){
 
         $data['judul'] = 'Register customer';
-        $list['barang']= $this->model_barang->tampil_data()->result();
 
         $this->load->view('partial/navbar');
         $this->load->view('partial/topbar');
         $this->load->view('partial/header', $data);
-        $this->load->view('deliver/customer_register', $list);
+        $this->load->view('deliver/customer_register');
         $this->load->view('partial/footer');
         
         
@@ -20,7 +19,7 @@
     }
     public function register(){
         $data=[
-            'username'=>$this->input->post('username'),
+            'nama'=>$this->input->post('nama'),
             'email'=>$this->input->post('email'),
             'password'=>$this->input->post('sandi')
             
@@ -28,6 +27,8 @@
         ];
         $this->load->model('register');
         $this ->register->regisdata($data);
+
+        redirect(base_url('home'),'refresh');
 
     }
 }
