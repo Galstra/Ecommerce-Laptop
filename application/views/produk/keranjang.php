@@ -47,24 +47,27 @@
                         </tr>
                       </thead>
                       <tbody>
-                      <?php foreach ($barang as $brg) : ?>
+                      <?php $total =0; ?>
+                      <?php foreach ($barang as $brg) : 
+                        $total = $total + $brg->harga;
+                        ?>
                         <tr>
-                          <td><a href="shop-detail 14s-CF2005TX(Gold).html"><img src="img/14s-CF2005TX(Gold).jpg" alt="14S-CF2005TX(GOLD)" class="img-fluid"></a></td>
+                          <td><a href="shop-detail 14s-CF2005TX(Gold).html"><img src="<?php echo base_url ('assets/img/'.$brg->gambar) ?>" alt="" class="img-fluid"></a></td>
                           <td><a href="shop-detail 14s-CF2005TX(Gold).html"><?php echo $brg ->merk_barang ?></a></td>
                           <td>
                             <input type="number" value="1" class="form-control">
                           </td>
-                          <td>Rp<?php echo $brg->harga ?> </td>
+                          <td><?php $harga=number_format($brg->harga,0,",","."); echo $harga ?> </td>
                           <td>$0.00</td>
-                          <td>Rp8.249.000</td>
-                          <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                          <td><?php echo $brg->harga ?></td>
+                          <td><a href="<?php echo base_url () ?>keranjang/hapuscart/<?php echo  $brg->id_barang ?>" ><i class="fa fa-trash-o"></i></a></td>
                         </tr>
                         <?php endforeach;?>
                       </tbody>
                       <tfoot>
                         <tr>
                           <th colspan="5">Total</th>
-                          <th colspan="2">Rp8.249.000</th>
+                          <th colspan="2"><?php $harga=number_format($total,0,",","."); echo $harga ?></th>
                         </tr>
                       </tfoot>
                     </table>
@@ -78,36 +81,31 @@
                   </div>
                 </form>
               </div>
-              <div class="row">
-                <div class="col-lg-3 col-md-6">
-                  <div class="box text-uppercase mt-0 mb-2">
-                    <h3>You may also like these products</h3>
+              <div>
+                <div >
+                  <div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                  <div class="product">
-                    <div class="image"><a href="shop-detail 13-AP0056TU(Black-Gold); AP0055TU(Blue).html"><img src="img/13-AP0056TU(Black Gold) 1.png" alt="" class="img-fluid image1"></a></div>
-                    <div class="text">
-                      <h3 class="h5"><a href="shop-detail 13-AP0056TU(Black-Gold); AP0055TU(Blue).html">13-AP0056TU(Black-Gold)</a></h3>
-                      <p class="price">Rp25.499.000</p>
+                <div>
+                  <div>
+                    <div ></div>
+                    <div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                  <div class="product">
-                    <div class="image"><a href="shop-detail 13-AR0009AU(Black).html"><img src="img/13-AR0009AU(Black) 1.png" alt="" class="img-fluid image1"></a></div>
-                    <div class="text">
-                      <h3 class="h5"><a href="shop-detail 13-AR0009AU(Black).html">13-AR0009AU(Black)</a></h3>
-                      <p class="price">RP17.499.000</p>
+                <div>
+                  <div>
+                    <div ></div>
+                    <div >
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                  <div class="product">
-                    <div class="image"><a href="shop-detail 14-DH1006TX(Gold); 05TX(Silver).html"><img src="img/14-DH1006TX(Gold) 1.png "alt="" class="img-fluid image1"></a></div>
-                    <div class="text">
-                      <h3 class="h5"><a href="shop-detail 14-DH1006TX(Gold); 05TX(Silver).html">14-DH1006TX(Gold)</a></h3>
-                      <p class="price">RP14.699.000</p>
+                <div>
+                  <div>
+                    <div>
+                    </div>
+                    <div>
+                      
                     </div>
                   </div>
                 </div>
@@ -124,7 +122,7 @@
                     <tbody>
                       <tr>
                         <td>Order subtotal</td>
-                        <th>Rp8.249.000</th>
+                        <th><?php echo $harga ?></th>
                       </tr>
                       <tr>
                         <td>Shipping and handling domestic</td>
@@ -132,15 +130,15 @@
                       </tr>
                        <tr>
                         <td>Shipping and handling nondomestic</td>
-                        <th>Rp275.000</th>
+                        <th>Rp</th>
                       </tr>
                       <tr>
                         <td>Tax</td>
-                        <th>Rp 206.225</th>
+                        <th>Rp </th>
                       </tr>
                       <tr class="total">
                         <td>Total</td>
-                        <th>Rp8.730,255</th>
+                        <th><?php echo $harga ?></th>
                       </tr>
                     </tbody>
                   </table>

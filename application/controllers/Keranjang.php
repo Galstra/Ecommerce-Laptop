@@ -16,11 +16,18 @@
         $this->load->model('model_barang');
         $list= $this->model_barang->get_data($add);
         $data = array(
+            'gambar'=>$list->gambar,
             'merk_barang' => $list->merk_barang,
             'harga' => $list->harga,
     );
         $this->load->model('addcart');
         $this->addcart->addproduk($data);
+        redirect('keranjang/index');
+
+    }
+    public function hapuscart($data){
+        $this->load->model('addcart');
+        $this->addcart->hapus($data);
         redirect('keranjang/index');
 
     }

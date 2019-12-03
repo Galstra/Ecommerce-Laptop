@@ -12,5 +12,10 @@ class Addcart extends CI_model{
         $this->db->insert('shopcart',$data);
         
     }
+    public function hapus($data){
+
+        $this->db->where('id_barang', $data);
+        $this->db->delete('shopcart');
+    }
 }
 ?>
