@@ -4,7 +4,6 @@
         parent::__construct();
     }
     public function index(){
-
         $data['judul'] = 'Low Specification';
         $list['barang']= $this->model_barang->get_lowspec(10000000);
 

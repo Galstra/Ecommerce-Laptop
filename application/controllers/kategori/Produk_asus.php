@@ -13,7 +13,6 @@
         $this->load->view('kategori/produkAsus', $list);
         $this->load->view('partial/footer');
     }
-
     public function subDetail($id_brg){
 
         $data['judul'] = 'ASUS ROG Strix Scar III';
@@ -24,8 +23,6 @@
         $this->load->view('partial/header', $data);
         $this->load->view('produk/shop_detail', $list);
         $this->load->view('partial/footer');
-        
-        
     }
 }
 ?>

@@ -7,7 +7,8 @@
 
         $list['barang']= $this->model_barang->get_merk('MSI');
         $data['judul'] = 'MSI';
-
+    
+        
         $this->load->view('partial/navbar');
         $this->load->view('partial/topbar');
         $this->load->view('partial/header',$data);

@@ -27,8 +27,6 @@
         $this->load->view('partial/header', $data);
         $this->load->view('produk/shop_detail', $list);
         $this->load->view('partial/footer');
-        
-        
     }
 }
 ?>

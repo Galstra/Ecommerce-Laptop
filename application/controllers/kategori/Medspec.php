@@ -4,7 +4,6 @@
         parent::__construct();
     }
     public function index(){
-
         $data['judul'] = 'Medium Specification';
         $list['barang']= $this->model_barang->get_medspec(10000000,20000000);
         

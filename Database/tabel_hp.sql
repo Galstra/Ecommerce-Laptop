@@ -3,9 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+
 -- Waktu pembuatan: 03 Des 2019 pada 06.57
+
 -- Versi server: 10.1.36-MariaDB
--- Versi PHP: 5.6.38
+-- Versi PHP: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
