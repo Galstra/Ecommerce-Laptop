@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 29, 2019 at 03:47 PM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.9
+-- Waktu pembuatan: 02 Des 2019 pada 18.45
+-- Versi server: 10.1.36-MariaDB
+-- Versi PHP: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `high_spec`
+-- Struktur dari tabel `high_spec`
 --
 
 CREATE TABLE `high_spec` (
@@ -39,7 +39,7 @@ CREATE TABLE `high_spec` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `high_spec`
+-- Dumping data untuk tabel `high_spec`
 --
 
 INSERT INTO `high_spec` (`id_barang`, `merk_barang`, `stok`, `keterangan`, `harga`, `gambar`, `gambar_2`) VALUES
@@ -53,17 +53,17 @@ INSERT INTO `high_spec` (`id_barang`, `merk_barang`, `stok`, `keterangan`, `harg
 --
 
 --
--- Indexes for table `high_spec`
+-- Indeks untuk tabel `high_spec`
 --
 ALTER TABLE `high_spec`
   ADD PRIMARY KEY (`id_barang`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `high_spec`
+-- AUTO_INCREMENT untuk tabel `high_spec`
 --
 ALTER TABLE `high_spec`
   MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;

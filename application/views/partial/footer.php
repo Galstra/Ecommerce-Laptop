@@ -3,7 +3,8 @@
           <div class="row">
             <div class="col-lg-3">
               <h4 class="h6">About Us</h4>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+              <p>Kelompok 4 :
+              </p>
               <hr class="d-block d-lg-none">
             </div>
             <div class="col-lg-3">
