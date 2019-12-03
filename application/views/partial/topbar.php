@@ -3,7 +3,7 @@
         <div class="container">
           <div class="row d-flex align-items-center">
             <div class="col-md-6 d-md-block d-none">
-              <p>Contact us on (nomor hp) & (email)</p>
+              <p>Kelompok 4</p>
             </div>
             <?php if(!$this->session->isLogin) : ?>
             <div class="col-md-6">
@@ -54,7 +54,7 @@
                 </p>
               </form>
               <p class="text-center text-muted">Not registered yet?</p>
-              <p class="text-center text-muted"><a href="<?php echo base_url('registrasi/registrasi')?>"><strong>Register now</strong></a>! It is easy and done in 1 minute and gives you access to special discounts and much more!</p>
+              <p class="text-center text-muted"><a href="<?php echo base_url('customer/customer_register')?>"><strong>Register now</strong></a>! It is easy and done in 1 minute and gives you access to special discounts and much more!</p>
             </div>
           </div>
         </div>
