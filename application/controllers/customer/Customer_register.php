@@ -15,6 +15,23 @@
         $this->load->view('partial/footer');
         
         
+
+
+    }
+    public function register(){
+        $data=[
+            'username'=>$this->input->post('username'),
+            'email'=>$this->input->post('email'),
+            'password'=>$this->input->post('sandi')
+            
+
+        ];
+        $this->load->model('register');
+        $this ->register->regisdata($data);
+
     }
 }
+
+
+
 ?>

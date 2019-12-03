@@ -36,21 +36,27 @@
                 <p>Informasi yang akan anda isi akan direkam dan disimpan dalam file sehingga anda dapat langsung masuk ketika ingin berbelanja di kami</p>
                 <p class="text-muted">Jika ada pertanyaan silahkan kontak kami <a href="contact.html">kontak kami</a>, kami siap membantu dalam 24 jam</p>
                 <hr>
-                <form action="customer-orders.html" method="get">
+
+                <form action="<?php echo base_url('customer/customer_register/register')?>" method="post">
                   <div class="form-group">
                     <label for="name-login">Nama</label>
-                    <input id="name-login" type="text" class="form-control">
+                    <input id="name-login" name ="username" type="text" class="form-control">
                   </div>
                   <div class="form-group">
                     <label for="email-login">Email</label>
-                    <input id="email-login" type="text" class="form-control">
+                    <input id="email-login" name ="email"type="text" class="form-control">
                   </div>
                   <div class="form-group">
                     <label for="password-login">Kata Sandi</label>
-                    <input id="password-login" type="password" class="form-control">
+                    <input id="password-login" name ="sandi" type="password" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="password-login">chek ulang Sandi</label>
+                    <input id="password-login" nama ="sandi1"type="password" class="form-control">
                   </div>
                   <div class="text-center">
                     <button type="submit" class="btn btn-template-outlined"><i class="fa fa-user-md"></i> Daftar</button>
+ 
                   </div>
                 </form>
               </div>

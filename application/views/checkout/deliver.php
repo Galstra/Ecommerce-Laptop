@@ -14,8 +14,8 @@
               <div class="box">
                 <form method="get" action="shop-checkout3.html">
                   <ul class="nav nav-pills nav-fill">
-                    <li class="nav-item"><a href="<?php echo base_url('checkout/address'?>" class="nav-link"> <i class="fa fa-map-marker"></i><br>Alamat</a></li>
-                    <li class="nav-item"><a href="<?php echo base_url('checkout/deliver'?>" class="nav-link active"><i class="fa fa-truck"></i><br>Metode Pengiriman</a></li>
+                    <li class="nav-item"><a href="<?php echo base_url('checkout/address')?>" class="nav-link"> <i class="fa fa-map-marker"></i><br>Alamat</a></li>
+                    <li class="nav-item"><a href="<?php echo base_url('checkout/deliver')?>" class="nav-link active"><i class="fa fa-truck"></i><br>Metode Pengiriman</a></li>
                     <li class="nav-item"><a href="#" class="nav-link disabled"><i class="fa fa-money"></i><br>Metode Pembayaran</a></li>
                     <li class="nav-item"><a href="#" class="nav-link disabled"><i class="fa fa-eye"></i><br>Detail Pesanan</a></li>
                   </ul>    
@@ -54,9 +54,9 @@
                     </div>
                   </div>
                   <div class="box-footer d-flex flex-wrap align-items-center justify-content-between">
-                    <div class="left-col"><a href="<?php echo base_url('checkout/address'?>" class="btn btn-secondary mt-0"><i class="fa fa-chevron-left"></i>Back to addresses</a></div>
+                    <div class="left-col"><a href="<?php echo base_url('checkout/address')?>" class="btn btn-secondary mt-0"><i class="fa fa-chevron-left"></i>Back to addresses</a></div>
                     <div class="right-col">
-                    <a href="<?php echo base_url('checkout/deliver'?>" class="btn btn-secondary mt-0"><i class="fa fa-chevron-right"></i>Continue to Payment Method</a>
+                    <a href="<?php echo base_url('checkout/payment')?>" class="btn btn-secondary mt-0"><i class="fa fa-chevron-right"></i>Continue to Payment Method</a>
                     </div>
                   </div>
                 </form>

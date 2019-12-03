@@ -14,6 +14,7 @@
         $this->load->view('partial/footer');
     }
     public function subDetail($id_brg){
+
         $data['judul'] = 'Halaman HP';
         $list['barang']= $this->model_hp->get_data($id_brg);
 
