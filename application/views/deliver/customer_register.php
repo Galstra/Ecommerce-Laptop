@@ -1,4 +1,3 @@
-
  <div id="all">
       <!-- Login Modal-->
       <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true" class="modal fade">
@@ -37,6 +36,7 @@
                 <p>Informasi yang akan anda isi akan direkam dan disimpan dalam file sehingga anda dapat langsung masuk ketika ingin berbelanja di kami</p>
                 <p class="text-muted">Jika ada pertanyaan silahkan kontak kami <a href="contact.html">kontak kami</a>, kami siap membantu dalam 24 jam</p>
                 <hr>
+
                 <form action="<?php echo base_url('customer/customer_register/register')?>" method="post">
                   <div class="form-group">
                     <label for="name-login">Nama</label>
@@ -56,7 +56,7 @@
                   </div>
                   <div class="text-center">
                     <button type="submit" class="btn btn-template-outlined"><i class="fa fa-user-md"></i> Daftar</button>
-                  
+ 
                   </div>
                 </form>
               </div>

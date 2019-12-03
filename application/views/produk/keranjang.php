@@ -73,7 +73,7 @@
                     <div class="left-col"><a href="<?php echo base_url ('home')?>" class="btn btn-secondary mt-0"><i class="fa fa-chevron-left"></i> Continue shopping</a></div>
                     <div class="right-col">
                       <button class="btn btn-secondary"><i class="fa fa-refresh"></i> Update cart</button>
-                      <button type="submit" class="btn btn-template-outlined">Proceed to checkout <i class="fa fa-chevron-right"></i></button>
+                      <a href="<?php echo base_url('checkout/address')?>" class="btn btn-secondary mt-0"><i class="fa fa-chevron-right"></i> Proceed to Checkout</a>
                     </div>
                   </div>
                 </form>
