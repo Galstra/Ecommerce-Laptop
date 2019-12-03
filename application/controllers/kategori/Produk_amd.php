@@ -4,7 +4,6 @@
         parent::__construct();
     }
     public function index(){
-
         $data['judul'] = 'AMD';
         $list['barang']= $this->model_amd->tampil_data()->result();
         
@@ -15,7 +14,6 @@
         $this->load->view('partial/footer');
     }
     public function subDetail($id_brg){
-
         $data['judul'] = 'Halaman AMD';
         $list['barang']= $this->model_amd->get_data($id_brg);
 
@@ -24,7 +22,6 @@
         $this->load->view('partial/header', $data);
         $this->load->view('produk/shop_detail', $list);
         $this->load->view('partial/footer');
-        
         
     }
 }
