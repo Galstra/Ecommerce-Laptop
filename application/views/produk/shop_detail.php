@@ -84,11 +84,30 @@
                                   <option value="large">Red</option>
                                   <option value="x-large">Blue</option>
                                 </select>
+                                
                               </div>
                               <p class="price">Rp<?php $harga=number_format($barang->harga,0,",","."); echo $harga ?></p>
                               <p class="text-center">
-                               <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> <a href= "<?php echo base_url () ?>keranjang/addcart/<?php echo  $barang->id_barang ?>?"> Add to cart</a></button>
-                                <button type="submit" data-toggle="tooltip" data-placement="top" title="Add to wishlist" class="btn btn-default"><i class="fa fa-heart-o"></i></button>
+                              <form class="form-inline">
+                                  <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                    <option selected>pilih jumlah</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                  </select>
+
+                                  <button type="submit" class="btn btn-template-outlined"><i class="fa fa-shopping-cart"></i> <a href= "<?php echo base_url () ?>keranjang/addcart/<?php echo  $barang->id_barang ?>"> Add to cart</a></button>
+                                </form>
+                                <div class="text-center">
+                                  <button type="submit" data-toggle="tooltip" data-placement="top" title="Add to wishlist" class="btn btn-default"><i class="fa fa-heart-o"></i><a href= "<?php echo base_url ()?>wishlist/addwish/<?php echo  $barang->id_barang ?>">Wishlist</a></button>
+                                </div>
                               </p>
                             </form>
                           </div>

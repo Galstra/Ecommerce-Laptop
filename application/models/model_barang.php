@@ -45,6 +45,12 @@ class Model_barang extends CI_model{
         return $this->db->query($query)->result();
 
     }
+    public function get_wish($nama){
+
+        $query = "SELECT * FROM tabel_barang WHERE merk_barang = '".$nama."'";
+        return $this->db->query($query)->row();
+    }
+
 
 
 }

@@ -53,4 +53,35 @@
     <script src="<?php echo base_url('assets/bootstrap-select/js/bootstrap-select.min.js')?>"></script>
     <script src="<?php echo base_url('assets/jquery.scrollto/jquery.scrollTo.min.js')?>"></script>
     <script src="<?php echo base_url('js/front.js')?>"></script>
+    <!-- <script> 
+          const tambah = document.getElementsByClassName('plus');
+          const kurang = document.getElementsByClassName('minus');
+          const banyakBarang = document.getElementsByClassName('banyakBarang');
+          const harga = document.getElementsByClassName('harga');
+          const total = document.getElementsByClassName('total');
+
+          for(let i=0; i<banyakBarang.length; i++){
+
+            tambah[i].addEventListener('click', function(){
+              banyakBarang[i].value++;
+              harga[i].innerHTML;
+              total[i].innerHTML;
+              total[i].innerHTML =  parseFloat(harga[i].innerHTML) * parseFloat(banyakBarang[i].value);
+              
+            });
+            kurang[i].addEventListener('click', function(){
+              banyakBarang[i].value--;
+              harga[i].innerHTML;
+              total[i].innerHTML;
+              total[i].innerHTML =  parseInt(harga[i].innerHTML) * parseInt(banyakBarang[i].value);
+            });
+          }  
+        
+          
+
+          // total = harga * banyakBarang;
+          console.log(total);
+          
+        
+  </script> -->
   </body>

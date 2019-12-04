@@ -8,7 +8,7 @@
               </li>
               <li class="button"><a href="<?php echo base_url('keranjang')?>" data-toggle="" class="buttons">Shopping Cart <b class="caret"></b></a>
             </li>
-            <li class="nav-item"><a href="javascript: void(0)"class="nav-link d-flex align-items-center justify-content-between">Wish List<b class="caret"></b></a>
+            <li class="nav-item"><a href="<?php echo base_url('wishlist')?>"class="nav-link d-flex align-items-center justify-content-between">Wish List<b class="caret"></b></a>
               </li>
               </ul>
             </div>
