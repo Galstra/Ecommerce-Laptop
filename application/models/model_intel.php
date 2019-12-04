@@ -6,7 +6,6 @@ class Model_intel extends CI_model{
 
         return $this->db->get('tabel_intel');
     }
-
     public function get_data($id_brg){
 
         $query = "SELECT * FROM tabel_intel WHERE id_barang = '".$id_brg."'";

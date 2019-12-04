@@ -5,7 +5,7 @@
     }
     public function index(){
         $data['judul'] = 'Asus';
-        $list['barang']= $this->model_asus->tampil_dataasus()->result();
+        $list['barang']= $this->model_barang->get_merk('ASUS');
 
         $this->load->view('partial/navbar');
         $this->load->view('partial/topbar');
@@ -14,8 +14,9 @@
         $this->load->view('partial/footer');
     }
     public function subDetail($id_brg){
-        $data['judul'] = 'Halaman ASUS';
-        $list['barang']= $this->model_asus->get_data($id_brg);
+
+        $data['judul'] = 'ASUS ROG Strix Scar III';
+        $list['barang']= $this->model_barang->get_data($id_brg);
 
         $this->load->view('partial/navbar');
         $this->load->view('partial/topbar');

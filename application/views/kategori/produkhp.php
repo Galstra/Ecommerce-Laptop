@@ -74,7 +74,7 @@
 
                     <div class="text">
                       <h3 class="h5"><?php echo $brg->merk_barang ?> </h3>
-                      <p class="price"><?php echo $brg->harga?> </p>
+                      <p class="price">Rp<?php $harga=number_format($brg->harga,0,",","."); echo $harga ?></p>
                     </div>
                   </div>
                 </div>

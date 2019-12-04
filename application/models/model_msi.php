@@ -6,7 +6,6 @@ class Model_msi extends CI_model{
 
         return $this->db->get('tabel_msi');
     }
-
     public function get_data($id_brg){
 
         $query = "SELECT * FROM tabel_msi WHERE id_barang = '".$id_brg."'";
