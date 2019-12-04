@@ -41,6 +41,7 @@
     public function logout()
     {
         $this->session->isLogin=FALSE;
+        $this->session->nama="";
         redirect(base_url('home'),'refresh');
     }
 }
