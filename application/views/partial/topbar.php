@@ -3,7 +3,7 @@
         <div class="container">
           <div class="row d-flex align-items-center">
             <div class="col-md-6 d-md-block d-none">
-              <p>Kelompok 4</p>
+              <p>Kelompok 5</p>
             </div>
             <?php if(!$this->session->isLogin) : ?>
             <div class="col-md-6">

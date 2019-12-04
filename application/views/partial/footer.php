@@ -3,13 +3,21 @@
           <div class="row">
             <div class="col-lg-3">
               <h4 class="h6">About Us</h4>
-              <p>Kelompok 4 :
+              <p>Mahasiswa Ilmu Komputer Universitas Pertamina angkatan 2017 yang terdiri dari empat anggota untuk memenuhi tugas besar salah satu materi kuliah,
+              yaitu Pemrograman Web. Kami menciptakan sebuah inovasi baru, yaitu toko jual beli laptop gaming berbasis web. Toko ini mempunyai nama sendiri, yakni GamesTop.
               </p>
               <hr class="d-block d-lg-none">
             </div>
             <div class="col-lg-3">
               <h4 class="h6">Contact</h4>
-              <p class="text-uppercase"><strong>Universal Ltd.</strong><br>13/25 New Avenue <br>Newtown upon River <br>45Y 73J <br>England <br><strong>Great Britain</strong></p>
+              <p>Hubungi CP kami:
+              <br />
+              <strong>Theo Galang Saputra</strong>
+              <br />
+              No.HP/WA: 089611821832
+              <br />
+              IG: theo_galang 
+              </p>
               <hr class="d-block d-lg-none">
             </div>
           </div>
