@@ -12,7 +12,7 @@
           <div class="row">
             <div id="checkout" class="col-lg-9">
               <div class="box">
-                <form method="get" action="<?= base_url('checkout/review/addReview') ?>">
+                <form method="get" action="">
                   <ul class="nav nav-pills nav-fill">
                     <li class="nav-item"><a href="<?php echo base_url('checkout/address')?>" class="nav-link"> <i class="fa fa-map-marker"></i><br>Address</a></li>
                     <li class="nav-item"><a href="<?php echo base_url('checkout/deliver')?>" class="nav-link"><i class="fa fa-truck"></i><br>Delivery Method</a></li>
@@ -26,36 +26,36 @@
                       <thead>
                         <tr>
                           <th colspan="2">Product</th>
-                          <th>Quantity</th>
                           <th>Unit price</th>
                           <th>Discount</th>
                           <th>Total</th>
                         </tr>
                       </thead>
                       <tbody>
+                    <?php $total=0 ?>
+                    <?php foreach ($barang as $brg) : 
+                    $total = $total + $brg->harga;
+                    ?>
                         <tr>
-                          <td><a href="#"><img src="img/detailsquare.jpg" alt="White Blouse Armani"></a></td>
-                          <td><a href="#">White Blouse Armani</a></td>
-                          <td>2</td>
-                          <td>$123.00</td>
-                          <td>$0.00</td>
-                          <td>$246.00</td>
+                        <td><a href="#"><img src="<?php echo base_url ('assets/img/'.$brg->gambar) ?>" alt="" class="img-fluid"></a></td>
+                        <td><a href="#"><?php echo $brg->merk_barang ?></a></td>
+                        <td>Rp <span class="harga"><?php $harga= number_format($brg->harga); echo $harga ?> </span></td>
+                        <td>Rp<span class="kupon"> <?php $harga=number_format($brg->ptngharga ); echo $harga ?></span></td>
+                        <td>Rp <span class="total"> <?php $harga=number_format($brg->harga); echo $harga ?></span></td>
                         </tr>
-                        <tr>
-                          <td><a href="#"><img src="img/basketsquare.jpg" alt="Black Blouse Armani"></a></td>
-                          <td><a href="#">Black Blouse Armani</a></td>
-                          <td>1</td>
-                          <td>$200.00</td>
-                          <td>$0.00</td>
-                          <td>$200.00</td>
-                        </tr>
+                        <?php endforeach;?>
                       </tbody>
                       <tfoot>
                         <tr>
-                          <th colspan="5">Total</th>
-                          <th>$446.00</th>
+                          <th colspan="4">Total</th>
+                          <th colspan="2"> <span class="total_harga">Rp<?php $harga=number_format($total-$brg->ptngharga,0,',','.'); echo $harga ?></span></th>
                         </tr>
                       </tfoot>
+                    <tfoot>
+                      <tr>
+                        <th colspan="4" class="text-left">Order subtotal</th>
+                        <th>Rp <?php $harga=number_format($total-$brg->ptngharga,0,',','.'); echo $harga ?></th>
+                    </tfoot>
                     </table>
                   </div>
                 </div>

@@ -18,5 +18,10 @@ class Addwish extends CI_model{
         $this->db->where('id_barang', $data);
         $this->db->delete('wishlist');
     }
+    public function get_data($id_brg){
+
+        $query = "SELECT * FROM wishlist WHERE id_barang = '".$id_brg."'";
+        return $this->db->query($query)->row();
+    }
 }
 ?>

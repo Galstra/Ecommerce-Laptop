@@ -25,8 +25,8 @@
                                  
                         ?>
                         <tr>
-                          <td><a href="shop-detail 14s-CF2005TX(Gold).html"><img src="<?php echo base_url ('assets/img/'.$brg->gambar) ?>" alt="" class="img-fluid"></a></td>
-                          <td><a href="shop-detail 14s-CF2005TX(Gold).html"><?php echo $brg->merk_barang ?></a></td>
+                          <td><a href="#"><img src="<?php echo base_url ('assets/img/'.$brg->gambar) ?>" alt="" class="img-fluid"></a></td>
+                          <td><a href="#"><?php echo $brg->merk_barang ?></a></td>
                           <td>
                             <button class="minus">-</button><input type="number" value="1" class="banyakBarang" disabled=""><button class="plus">+</button>
                           </td>
@@ -37,12 +37,25 @@
                         </tr>
                         <?php endforeach;?>
                       </tbody>
-                      <tfoot>
+                      <?php if(!isset($brg)) : ?>
+                     
+                        <?php if(isset($brg)){
+                        $harga=number_format($total-$brg->ptngharga,0,',','.');
+                        echo ('<tfoot>
+                        <tr>
+                          <th colspan="5">Total</th>
+                          <th colspan="2"> <span class="total_harga">Rp' + $harga + ' </span></th>
+                        </tr>
+                      </tfoot>');
+                      } ?>
+                      <?php else : ?>
+                        <tfoot>
                         <tr>
                           <th colspan="5">Total</th>
                           <th colspan="2"> <span class="total_harga">Rp<?php $harga=number_format($total-$brg->ptngharga,0,',','.'); echo $harga ?></span></th>
                         </tr>
                       </tfoot>
+                    <?php endif ?>
                     </table>
                   </div>
                   <div class="box-footer d-flex justify-content-between align-items-center">
@@ -91,20 +104,41 @@
                 <p class="text-muted">Shipping and additional costs are calculated based on the values you have entered.</p>
                 <div class="table-responsive">
                   <table class="table">
-                    <tbody>
-                      <tr>
-                        <td>Order subtotal</td>
-                        <th>Rp<?php $harga=number_format($total,0,',','.'); echo $harga ?></th>
-                      </tr>
-                      <tr>
-                        <td>kupon</td>
-                        <th>Rp<?php $harga=number_format($brg->ptngharga ); echo $harga ?></th>
-                      </tr>
-                      <tr class="total">
-                        <td>Total</td>
-                        <th>Rp<?php $harga=number_format($total-$brg->ptngharga,0,',','.'); echo $harga ?></th>
-                      </tr>
-                    </tbody>
+                  <?php if(!isset($brg)) : ?>
+                    <?php if(isset($brg)){
+                      $harga=number_format($total,0,',','.'); 
+                      $harga=number_format($brg->ptngharga );
+                      echo ('<tbody>
+                            <tr>
+                              <td>Order subtotal</td>
+                              <th>Rp'+ $harga +' </th>
+                            </tr>
+                            <tr>
+                              <td>kupon</td>
+                              <th>Rp'+ $harga +'</th>
+                            </tr>
+                            <tr class="total">
+                              <td>Total</td>
+                              <th>Rp'+ $harga +'</th>
+                            </tr> 
+                          </tbody>');
+                    }?>
+                    <?php else : ?> 
+                        <tbody>
+                          <tr>
+                            <td>Order subtotal</td>
+                            <th>Rp<?php $harga=number_format($total,0,',','.'); echo $harga ?></th>
+                          </tr>
+                          <tr>
+                            <td>kupon</td>
+                            <th>Rp<?php $harga=number_format($brg->ptngharga ); echo $harga ?></th>
+                          </tr>
+                          <tr class="total">
+                            <td>Total</td>
+                            <th>Rp<?php $harga=number_format($total-$brg->ptngharga,0,',','.'); echo $harga ?></th>
+                          </tr> 
+                        </tbody>
+                    <?php endif ?>
                   </table>
                 </div>
               </div>

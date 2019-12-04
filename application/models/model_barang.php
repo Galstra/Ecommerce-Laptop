@@ -53,5 +53,6 @@ class Model_barang extends CI_model{
 
 
 
+
 }
 ?>

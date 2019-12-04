@@ -23,6 +23,8 @@
                 'gambar'=>$list->gambar,
                 'merk_barang' => $list->merk_barang,
                 'harga' => $list->harga,
+                'keterangan'=> $list->keterangan,
+                'gambar_2'=>$list->gambar_2,
                 'nama_user'=> $this->session->nama
             );
         }
@@ -42,6 +44,19 @@
         redirect('wishlist/index');
 
     }
+    public function subDetail($id_brg){
+        $data['judul'] = 'Wishlist';
+
+        $list['barang']= $this->addwish->get_data($id_brg);
+
+        $this->load->view('partial/navbar');
+        $this->load->view('partial/topbar');
+        $this->load->view('partial/header',$data);
+        $this->load->view('produk/shop_detail', $list);
+        $this->load->view('partial/footer');
+    }
+        
+
 }
 
 ?>
