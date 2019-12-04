@@ -31,7 +31,7 @@
                             <button class="minus">-</button><input type="number" value="1" class="banyakBarang" disabled=""><button class="plus">+</button>
                           </td>
                           <td>Rp <span class="harga"><?php $harga= number_format($brg->harga); echo $harga ?> </span></td>
-                          <td>$0.00</td>
+                          <td>Rp<span class="kupon"> <?php $harga=number_format($brg->ptngharga ); echo $harga ?></span></td>
                           <td>Rp <span class="total"> <?php $harga=number_format($brg->harga); echo $harga ?></span></td>
                           <td><a href="<?php echo base_url () ?>keranjang/hapuscart/<?php echo  $brg->id_barang ?>" ><i class="fa fa-trash-o"></i></a></td>
                         </tr>
@@ -40,7 +40,7 @@
                       <tfoot>
                         <tr>
                           <th colspan="5">Total</th>
-                          <th colspan="2"> <span class="total_harga">Rp <?php $harga=number_format($total,0,","," "); echo $harga ?></span></th>
+                          <th colspan="2"> <span class="total_harga">Rp<?php $harga=number_format($total-$brg->ptngharga,0,',','.'); echo $harga ?></span></th>
                         </tr>
                       </tfoot>
                     </table>
@@ -94,23 +94,15 @@
                     <tbody>
                       <tr>
                         <td>Order subtotal</td>
-                        <th><?php echo $harga ?></th>
+                        <th>Rp<?php $harga=number_format($total,0,',','.'); echo $harga ?></th>
                       </tr>
                       <tr>
-                        <td>Shipping and handling domestic</td>
-                        <th>Rp0</th>
-                      </tr>
-                       <tr>
-                        <td>Shipping and handling nondomestic</td>
-                        <th>Rp</th>
-                      </tr>
-                      <tr>
-                        <td>Tax</td>
-                        <th>Rp </th>
+                        <td>kupon</td>
+                        <th>Rp<?php $harga=number_format($brg->ptngharga ); echo $harga ?></th>
                       </tr>
                       <tr class="total">
                         <td>Total</td>
-                        <th><?php echo $harga ?></th>
+                        <th>Rp<?php $harga=number_format($total-$brg->ptngharga,0,',','.'); echo $harga ?></th>
                       </tr>
                     </tbody>
                   </table>
@@ -121,9 +113,9 @@
                   <h4>Coupon code</h4>
                 </div>
                 <p class="text-muted">If you have a coupon code, please enter it in the box below.</p>
-                <form>
+                <form action="<?php echo base_url () ?>keranjang/diskon" method = "POST">
                   <div class="input-group">
-                    <input type="text" class="form-control"><span class="input-group-btn">
+                    <input type="text" name="koupon" class="form-control"><span class="input-group-btn">
                       <button type="button" class="btn btn-template-main"><i class="fa fa-gift"></i></button></span>
                   </div>
                 </form>

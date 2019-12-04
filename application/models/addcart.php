@@ -18,5 +18,18 @@ class Addcart extends CI_model{
         $this->db->where('id_barang', $data);
         $this->db->delete('shopcart');
     }
+    public function get_kupon($data){
+
+        $this->db->where('no_kupon', $data);
+        return$this->db->get('kupon')->row();
+    }
+    public function add_kupon($data)
+    {
+        $this->db->where('nama_user',$this->session->nama);
+        $this->db->update('shopcart',$data);
+
+        
+    }
+
 }
 ?>
