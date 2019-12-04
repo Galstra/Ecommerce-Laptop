@@ -4,7 +4,7 @@
             <div class="col-lg-3">
               <h4 class="h6">About Us</h4>
               <p>Mahasiswa Ilmu Komputer Universitas Pertamina atau biasa dikenal dengan CS UP yang terdiri dari empat anggota, yaitu Theo, Florin, Boy dan Alvi. Kami menciptakan
-              suatu inovasi baru, yakni sistem penjualan laptop gaming yang kami namai ialah GamesTop. 
+              suatu inovasi baru, yakni sistem penjualan laptop gaming yang kami namai ialah GamesTop (<em>Laptop Gaming Masa Kini</em>). 
               </p>
               <hr class="d-block d-lg-none">
             </div>
