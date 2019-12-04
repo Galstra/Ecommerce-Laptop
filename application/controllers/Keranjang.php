@@ -24,6 +24,7 @@
                 'merk_barang' => $list->merk_barang,
                 'harga' => $list->harga,
                 'nama_user'=> $this->session->nama,
+                
             );
         }
         else{
@@ -41,6 +42,17 @@
         $this->addcart->hapus($data);
         redirect('keranjang/index');
 
+    }
+    public function diskon(){
+        $this->load->model('addcart');
+        $kupon=$this->addcart->get_kupon($this->input->post('koupon')); 
+        $data = array(
+            'no_kupon'=>$kupon->no_kupon,
+            'ptngharga'=>$kupon->ptngharga,
+
+        );
+        $this->addcart->add_kupon($data);
+        redirect('keranjang/index');
     }
 }
 ?>
