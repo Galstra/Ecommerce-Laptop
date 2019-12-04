@@ -125,16 +125,15 @@
                           <?php echo str_replace('|','.<br>',$barang->keterangan) ?>
                         </p>
                         <blockquote class="blockquote">
-                          <p class="mb-0"><em>Define style this season with Armani's new range of trendy tops, crafted with intricate details. Create a chic statement look by teaming this lace number with skinny jeans and pumps.</em></p>
+                          <p class="mb-0"><em><?php echo $barang->merk_barang ?> sangat direkomendasikan untuk para pengguna laptop gaming yang membutuhkan model terbaru dan menarik. Produk ini merupakan produk andalan dan rekomendasi dari kami sehingga laris terjual.</em></p>
                         </blockquote>
                       </div>
                       <div id="product-social" class="box social text-center mb-5 mt-5">
                         <h4 class="heading-light">Show it to your friends</h4>
                         <ul class="social list-inline">
-                          <li class="list-inline-item"><a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a></li>
-                          <li class="list-inline-item"><a href="#" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a></li>
-                          <li class="list-inline-item"><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a></li>
-                          <li class="list-inline-item"><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></li>
+                          <li class="list-inline-item"><a href="https://id-id.facebook.com/" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a></li>
+                          <li class="list-inline-item"><a href="https://www.gmail.com" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a></li>
+                          <li class="list-inline-item"><a href="https://www.twitter.com" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a></li>
                         </ul>
                       </div>
             </div>
