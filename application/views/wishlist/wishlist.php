@@ -17,7 +17,7 @@
                 <?php endforeach;?>
               </div>
             </div>
-            <div class="box mt-0 mb-4 p-0">
+            <div class="col-lg-3">
             <div class="panel-body">
                   <ul class="nav nav-pills flex-column text-sm">
                     <li class="nav-item"><a href="customer-orders.html" class="nav-link active"><i class="fa fa-list"></i> Pesanan saya</a></li>
