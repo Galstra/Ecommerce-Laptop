@@ -4,84 +4,45 @@
         <div class="container">
           <div class="row bar">
             <div id="customer-order" class="col-lg-9">
-              <p class="lead">Order #1735 was placed on <strong>22/06/2013</strong> and is currently <strong>Being prepared</strong>.</p>
-              <p class="lead text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>
               <div class="box">
                 <div class="table-responsive">
                   <table class="table">
                     <thead>
                       <tr>
-                        <th colspan="2" class="border-top-0">Product</th>
-                        <th class="border-top-0">Quantity</th>
-                        <th class="border-top-0">Unit price</th>
-                        <th class="border-top-0">Discount</th>
-                        <th class="border-top-0">Total</th>
+                          <th colspan="2"> Product</th>
+                          <th>Unit price</th>
+                          <th>Discount</th>
+                          <th>Total</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td><a href="#"><img src="img/detailsquare.jpg" alt="White Blouse Armani" class="img-fluid"></a></td>
-                        <td><a href="#">White Blouse Armani</a></td>
-                        <td>2</td>
-                        <td>$123.00</td>
-                        <td>$0.00</td>
-                        <td>$246.00</td>
-                      </tr>
-                      <tr>
-                        <td><a href="#"><img src="img/basketsquare.jpg" alt="Black Blouse Armani" class="img-fluid"></a></td>
-                        <td><a href="#">Black Blouse Armani</a></td>
-                        <td>1</td>
-                        <td>$200.00</td>
-                        <td>$0.00</td>
-                        <td>$200.00</td>
-                      </tr>
+                    <?php $total=0 ?>
+                    <?php foreach ($barang as $brg) : 
+                    $total = $total + $brg->harga;
+                    ?>
+                        <tr>
+                        <td><a href="#"><img src="<?php echo base_url ('assets/img/'.$brg->gambar) ?>" alt="" class="img-fluid"></a></td>
+                        <td><a href="#"><?php echo $brg->merk_barang ?></a></td>
+                        <td>Rp <span class="harga"><?php $harga= number_format($brg->harga); echo $harga ?> </span></td>
+                        <td>Rp<span class="kupon"> <?php $harga=number_format($brg->ptngharga ); echo $harga ?></span></td>
+                        <td>Rp <span class="total"> <?php $harga=number_format($brg->harga); echo $harga ?></span></td>
+                        </tr>
+                        <?php endforeach;?>
                     </tbody>
                     <tfoot>
+                        <tr>
+                          <th colspan="4">Total</th>
+                          <th colspan="2"> <span class="total_harga">Rp<?php $harga=number_format($total-$brg->ptngharga,0,',','.'); echo $harga ?></span></th>
+                        </tr>
+                      </tfoot>
+                    <tfoot>
                       <tr>
-                        <th colspan="5" class="text-right">Order subtotal</th>
-                        <th>$446.00</th>
-                      </tr>
-                      <tr>
-                        <th colspan="5" class="text-right">Shipping and handling</th>
-                        <th>$10.00</th>
-                      </tr>
-                      <tr>
-                        <th colspan="5" class="text-right">Tax</th>
-                        <th>$0.00</th>
-                      </tr>
-                      <tr>
-                        <th colspan="5" class="text-right">Total</th>
-                        <th>$456.00</th>
-                      </tr>
+                        <th colspan="4" class="text-left">Order subtotal</th>
+                        <th>Rp <?php $harga=number_format($total-$brg->ptngharga,0,',','.'); echo $harga ?></th>
                     </tfoot>
                   </table>
                 </div>
-                <div class="row addresses">
-                  <div class="col-md-6 text-right">
-                    <h3 class="text-uppercase">Invoice address</h3>
-                    <p>John Brown<br>					    13/25 New Avenue<br>					    New Heaven<br>					    45Y 73J<br>					    England<br>					    Great Britain</p>
-                  </div>
-                  <div class="col-md-6 text-right">
-                    <h3 class="text-uppercase">Shipping address</h3>
-                    <p>John Brown<br>					    13/25 New Avenue<br>					    New Heaven<br>					    45Y 73J<br>					    England<br>					    Great Britain</p>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="col-lg-3 mt-4 mt-lg-0">
-              <!-- CUSTOMER MENU -->
-              <div class="panel panel-default sidebar-menu">
-                <div class="panel-heading">
-                  <h3 class="h4 panel-title">Customer section</h3>
-                </div>
-                <div class="panel-body">
-                  <ul class="nav nav-pills flex-column text-sm">
-                    <li class="nav-item"><a href="customer-orders.html" class="nav-link active"><i class="fa fa-list"></i> My orders</a></li>
-                    <li class="nav-item"><a href="<?php echo base_url('wishlist')?>" class="nav-link"><i class="fa fa-heart"></i> My wishlist</a></li>
-                    <li class="nav-item"><a href="customer-account.html" class="nav-link"><i class="fa fa-user"></i> My account</a></li>
-                    <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-sign-out"></i> Logout</a></li>
-                  </ul>
-                </div>
               </div>
             </div>
           </div>

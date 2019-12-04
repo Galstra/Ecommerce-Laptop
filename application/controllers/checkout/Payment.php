@@ -46,12 +46,15 @@
         $this->model_payment->addPayment($dataPayment);
 
         $data['judul'] = 'Order Review';
-
+        $this->load->model('addcart');
+        $list['barang']= $this->addcart->tampil_data()->result();
         $this->load->view('partial/navbar');
         $this->load->view('partial/topbar');
         $this->load->view('partial/header', $data);
-        $this->load->view('checkout/review');
+        $this->load->view('checkout/review',$list);
         $this->load->view('partial/footer');
+        echo "<script>alert('Terima kasih telah berbelanja bersama kami berikut history pembelian anda')</script>";
+        redirect(base_url('checkout/invoice'),'refresh');
     }
 }
 ?>
