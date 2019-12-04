@@ -1,31 +1,4 @@
     <div id="all">
-    <!-- Login Modal-->
-      <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true" class="modal fade">
-        <div role="document" class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 id="login-modalLabel" class="modal-title">Customer Login</h4>
-              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
-            </div>
-            <div class="modal-body">
-              <form action="customer-orders.html" method="get">
-                <div class="form-group">
-                  <input id="email_modal" type="text" placeholder="email" class="form-control">
-                </div>
-                <div class="form-group">
-                  <input id="password_modal" type="password" placeholder="password" class="form-control">
-                </div>
-                <p class="text-center">
-                  <button class="btn btn-template-outlined"><i class="fa fa-sign-in"></i> Log in</button>
-                </p>
-              </form>
-              <p class="text-center text-muted">Not registered yet?</p>
-              <p class="text-center text-muted"><a href="customer-register.html"><strong>Register now</strong></a>! It is easy and done in 1 minute and gives you access to special discounts and much more!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Login modal end-->
       <div id="content">
         <div class="container">
           <div class="row bar">
@@ -34,7 +7,6 @@
             </div>
             <div id="basket" class="col-lg-9">
               <div class="box mt-0 pb-0 no-horizontal-padding">
-                <form method="get" action="shop-checkout1.html">
                   <div class="table-responsive">
                     <table class="table">
                       <thead>
@@ -50,16 +22,17 @@
                       <?php $total =0; ?>
                       <?php foreach ($barang as $brg) : 
                         $total = $total + $brg->harga;
+                                 
                         ?>
                         <tr>
                           <td><a href="shop-detail 14s-CF2005TX(Gold).html"><img src="<?php echo base_url ('assets/img/'.$brg->gambar) ?>" alt="" class="img-fluid"></a></td>
                           <td><a href="shop-detail 14s-CF2005TX(Gold).html"><?php echo $brg->merk_barang ?></a></td>
                           <td>
-                            <input type="number" value="1" class="form-control">
+                            <button class="minus">-</button><input type="number" value="1" class="banyakBarang" disabled=""><button class="plus">+</button>
                           </td>
-                          <td>Rp<?php $harga=number_format($brg->harga,0,",","."); echo $harga ?> </td>
+                          <td>Rp <span class="harga"><?php $harga= number_format($brg->harga); echo $harga ?> </span></td>
                           <td>$0.00</td>
-                          <td>Rp  <?php $harga=number_format($brg->harga,0,",","."); echo $harga ?></td>
+                          <td>Rp <span class="total"> <?php $harga=number_format($brg->harga); echo $harga ?></span></td>
                           <td><a href="<?php echo base_url () ?>keranjang/hapuscart/<?php echo  $brg->id_barang ?>" ><i class="fa fa-trash-o"></i></a></td>
                         </tr>
                         <?php endforeach;?>
@@ -67,7 +40,7 @@
                       <tfoot>
                         <tr>
                           <th colspan="5">Total</th>
-                          <th colspan="2">Rp<?php $harga=number_format($total,0,",","."); echo $harga ?></th>
+                          <th colspan="2"> <span class="total_harga">Rp <?php $harga=number_format($total,0,","," "); echo $harga ?></span></th>
                         </tr>
                       </tfoot>
                     </table>
@@ -79,7 +52,6 @@
                       <a href="<?php echo base_url('checkout/address')?>" class="btn btn-secondary mt-0"><i class="fa fa-chevron-right"></i> Proceed to Checkout</a>
                     </div>
                   </div>
-                </form>
               </div>
               <div>
                 <div >
@@ -160,4 +132,4 @@
           </div>
         </div>
       </div>
-     
+    

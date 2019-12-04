@@ -14,13 +14,23 @@
         $this->load->view('partial/footer');
     }
     public function addcart($add){
-        $this->load->model('model_barang');
-        $list= $this->model_barang->get_data($add);
-        $data = array(
-            'gambar'=>$list->gambar,
-            'merk_barang' => $list->merk_barang,
-            'harga' => $list->harga,
-    );
+
+        if($this->session->isLogin){
+
+            $this->load->model('model_barang');
+            $list= $this->model_barang->get_data($add);
+            $data = array(
+                'gambar'=>$list->gambar,
+                'merk_barang' => $list->merk_barang,
+                'harga' => $list->harga,
+                'nama_user'=> $this->session->nama,
+            );
+        }
+        else{
+            echo "<script>alert('Anda harus login terlebihi dahulu')</script>";
+            redirect(base_url('home'),'refresh');
+        }
+
         $this->load->model('addcart');
         $this->addcart->addproduk($data);
         redirect('keranjang/index');

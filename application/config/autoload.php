@@ -134,6 +134,6 @@ $autoload['language'] = array();
 */
 $autoload['model'] = array('model_barang','model_asus','model_hp',
 'model_highspec','model_lowspec','model_medspec','model_msi','model_lenovo','model_intel',
-'model_amd','register');
+'model_amd','register','addwish');
 
  
