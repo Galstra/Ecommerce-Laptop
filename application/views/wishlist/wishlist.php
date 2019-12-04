@@ -20,10 +20,10 @@
             <div class="col-lg-3">
             <div class="panel-body">
                   <ul class="nav nav-pills flex-column text-sm">
-                    <li class="nav-item"><a href="customer-orders.html" class="nav-link"><i class="fa fa-list"></i> Pesanan saya</a></li>
-                    <li class="nav-item"><a href="customer-wishlist.html" class="nav-link active"><i class="fa fa-heart"></i> Wishlist</a></li>
-                    <li class="nav-item"><a href="customer-account.html" class="nav-link"><i class="fa fa-user"></i> Akun saya</a></li>
-                    <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-sign-out"></i> Keluar</a></li>
+
+                    <li class="nav-item"><a href="<?php echo base_url('keranjang')?>" class="nav-link active"><i class="fa fa-list"></i> My Shopping Cart</a></li>
+                    <li class="nav-item"><a href="<?php echo base_url('wishlist')?>" class="nav-link"><i class="fa fa-heart"></i> Wishlist</a></li>
+                    <li class="nav-item"><a href="<?php echo base_url('home')?>" class="nav-link"><i class="fa fa-sign-out"></i> Halaman utama</a></li>
                   </ul>
                 </div>
             </div>
