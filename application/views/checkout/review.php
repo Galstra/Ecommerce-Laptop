@@ -12,12 +12,12 @@
           <div class="row">
             <div id="checkout" class="col-lg-9">
               <div class="box">
-                <form method="get" action="shop-checkout4.html">
+                <form method="get" action="<?= base_url('checkout/review/addReview') ?>">
                   <ul class="nav nav-pills nav-fill">
-                    <li class="nav-item"><a href="shop-checkout1.html" class="nav-link"> <i class="fa fa-map-marker"></i><br>Address</a></li>
-                    <li class="nav-item"><a href="shop-checkout2.html" class="nav-link"><i class="fa fa-truck"></i><br>Delivery Method</a></li>
-                    <li class="nav-item"><a href="shop-checkout3.html" class="nav-link"><i class="fa fa-money"></i><br>Payment Method</a></li>
-                    <li class="nav-item"><a href="shop-checkout4.html" class="nav-link active"><i class="fa fa-eye"></i><br>Order Review</a></li>
+                    <li class="nav-item"><a href="<?php echo base_url('checkout/address')?>" class="nav-link"> <i class="fa fa-map-marker"></i><br>Address</a></li>
+                    <li class="nav-item"><a href="<?php echo base_url('checkout/deliver')?>" class="nav-link"><i class="fa fa-truck"></i><br>Delivery Method</a></li>
+                    <li class="nav-item"><a href="<?php echo base_url('checkout/payment')?>" class="nav-link"><i class="fa fa-money"></i><br>Payment Method</a></li>
+                    <li class="nav-item"><a href="<?php echo base_url('checkout/review')?>" class="nav-link active"><i class="fa fa-eye"></i><br>Order Review</a></li>
                   </ul>
                 </form>
                 <div class="content">
@@ -62,7 +62,7 @@
                 <div class="box-footer d-flex flex-wrap align-items-center justify-content-between">
                   <div class="left-col"><a href="<?php echo base_url('checkout/payment')?>" class="btn btn-secondary mt-0"><i class="fa fa-chevron-left"></i>Back to payment method</a></div>
                   <div class="right-col">
-                    <button type="submit" class="btn btn-template-main">Place the order<i class="fa fa-chevron-right"></i></button>
+                  <a href="<?php echo base_url('checkout/invoice')?>" class="btn btn-secondary mt-0"><i class="fa fa-chevron-right"></i>Place the Order</a>
                   </div>
                 </div>
               </div>

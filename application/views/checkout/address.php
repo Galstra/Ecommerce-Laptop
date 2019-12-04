@@ -10,10 +10,10 @@
       </div>
       <div id="content">
         <div class="container"><ul class="nav nav-pills nav-fill">
-                    <li class="nav-item"><a href="shop-checkout1.html" class="nav-link active"> <i class="fa fa-map-marker"></i><br>Alamat</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link disabled"><i class="fa fa-truck"></i><br>Metode Pengiriman</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link disabled"><i class="fa fa-money"></i><br>Metode Pembayaran</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link disabled"><i class="fa fa-eye"></i><br>Detail Pesanan</a></li>
+                    <li class="nav-item"><a href="<?php echo base_url('checkout/address')?>" class="nav-link active"> <i class="fa fa-map-marker"></i><br>Address</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link disabled"><i class="fa fa-truck"></i><br>Delivery Method</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link disabled"><i class="fa fa-money"></i><br>Payment method</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link disabled"><i class="fa fa-eye"></i><br>Review Order</a></li>
                   </ul>
           <div class="row">
             <div id="checkout" class="col-lg-9">
@@ -35,12 +35,17 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row">
-                      
+                    <div class="row">                      
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label for="street">Alamat</label>
                           <input id="street" type="text" class="form-control" name="alamat">
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="phone">Telephone</label>
+                          <input id="phone" type="text" class="form-control" name="telephone">
                         </div>
                       </div>
                     </div>
@@ -55,18 +60,6 @@
                         <div class="form-group">
                           <label for="state">Provinsi</label>
                           <input id="state" class="form-control" name="provinsi">
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                        <div class="form-group">
-                          <label for="country">Negara</label>
-                          <input id="country" class="form-control" name="negara">
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-group">
-                          <label for="phone">Telephone</label>
-                          <input id="phone" type="text" class="form-control" name="telephone">
                         </div>
                       </div>
                       <div class="col-sm-6">
