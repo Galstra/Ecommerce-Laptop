@@ -3,20 +3,20 @@
           <div class="row">
             <div class="col-lg-3">
               <h4 class="h6">About Us</h4>
-              <p>Mahasiswa Ilmu Komputer Universitas Pertamina angkatan 2017 yang terdiri dari empat anggota untuk memenuhi tugas besar salah satu materi kuliah,
-              yaitu Pemrograman Web. Kami menciptakan sebuah inovasi baru, yaitu toko jual beli laptop gaming berbasis web. Toko ini mempunyai nama sendiri, yakni GamesTop.
+              <p>Mahasiswa Ilmu Komputer Universitas Pertamina atau biasa dikenal dengan CS UP yang terdiri dari empat anggota, yaitu Theo, Florin, Boy dan Alvi. Kami menciptakan
+              suatu inovasi baru, yakni sistem penjualan laptop gaming yang kami namai ialah GamesTop (<em>Laptop Gaming Masa Kini</em>). 
               </p>
               <hr class="d-block d-lg-none">
             </div>
             <div class="col-lg-3">
               <h4 class="h6">Contact</h4>
-              <p>Hubungi CP kami:
+              <p>Hubungi CP kami di:
               <br />
               <strong>Theo Galang Saputra</strong>
               <br />
               No.HP/WA: 089611821832
               <br />
-              IG: theo_galang 
+              IG: theo_galang
               </p>
               <hr class="d-block d-lg-none">
             </div>

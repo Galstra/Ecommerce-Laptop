@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2019 at 01:51 PM
+-- Generation Time: Dec 04, 2019 at 12:50 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -25,46 +25,45 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `shopcart`
+-- Table structure for table `tabel_user`
 --
 
-CREATE TABLE `shopcart` (
-  `id_barang` int(11) NOT NULL,
-  `merk_barang` varchar(120) NOT NULL,
-  `harga` int(200) NOT NULL,
-  `keterangan` text NOT NULL,
-  `stok` int(11) NOT NULL,
-  `gambar` text NOT NULL,
-  `nama_user` varchar(200) NOT NULL
+CREATE TABLE `tabel_user` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(250) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `role` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `shopcart`
+-- Dumping data for table `tabel_user`
 --
 
-INSERT INTO `shopcart` (`id_barang`, `merk_barang`, `harga`, `keterangan`, `stok`, `gambar`, `nama_user`) VALUES
-(27, 'HP OMEN 15-DH0105TX', 23999000, '', 0, 'OMEN 15-DH0105TX Black 1.png', 'theo'),
-(31, 'Lenovo IP330-4TID', 9800000, '', 0, 'IP330-4TID.jpg', 'admin');
+INSERT INTO `tabel_user` (`id`, `nama`, `email`, `password`, `role`) VALUES
+(1, 'admin', 'admin@gmail.com', '12345', 1),
+(2, 'theo', 'theo@gmail.com', '12345', 0),
+(4, 't.saputra01', '243', '3232', 0);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `shopcart`
+-- Indexes for table `tabel_user`
 --
-ALTER TABLE `shopcart`
-  ADD PRIMARY KEY (`id_barang`);
+ALTER TABLE `tabel_user`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `shopcart`
+-- AUTO_INCREMENT for table `tabel_user`
 --
-ALTER TABLE `shopcart`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+ALTER TABLE `tabel_user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

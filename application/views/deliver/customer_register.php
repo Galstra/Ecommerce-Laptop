@@ -51,8 +51,8 @@
                     <input id="password-login" name ="sandi" type="password" class="form-control">
                   </div>
                   <div class="form-group">
-                    <label for="password-login">chek ulang Sandi</label>
-                    <input id="password-login" nama ="sandi1"type="password" class="form-control">
+                    <label for="password-login">Cek Ulang Sandi</label>
+                    <input id="password-login" name ="sandi1"type="password" class="form-control">
                   </div>
                   <div class="text-center">
                     <button type="submit" class="btn btn-template-outlined"><i class="fa fa-user-md"></i> Daftar</button>

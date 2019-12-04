@@ -22,7 +22,6 @@
         $alamat = $this->input->post('alamat');
         $kota = $this->input->post('kota');
         $provinsi = $this->input->post('provinsi');
-        $negara = $this->input->post('negara');
         $telephone = $this->input->post('telephone');
         $email = $this->input->post('email');
 
@@ -32,7 +31,6 @@
             'alamat' => $alamat,
             'kota' => $kota,
             'provinsi' => $provinsi,
-            'negara' => $negara,
             'telephone' => $telephone,
             'email' => $email
         );

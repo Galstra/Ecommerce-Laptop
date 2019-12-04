@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2019 at 01:51 PM
+-- Generation Time: Dec 04, 2019 at 12:50 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -25,35 +25,33 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `shopcart`
+-- Table structure for table `wishlist`
 --
 
-CREATE TABLE `shopcart` (
+CREATE TABLE `wishlist` (
   `id_barang` int(11) NOT NULL,
   `merk_barang` varchar(120) NOT NULL,
-  `harga` int(200) NOT NULL,
-  `keterangan` text NOT NULL,
-  `stok` int(11) NOT NULL,
+  `harga` int(11) NOT NULL,
   `gambar` text NOT NULL,
   `nama_user` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `shopcart`
+-- Dumping data for table `wishlist`
 --
 
-INSERT INTO `shopcart` (`id_barang`, `merk_barang`, `harga`, `keterangan`, `stok`, `gambar`, `nama_user`) VALUES
-(27, 'HP OMEN 15-DH0105TX', 23999000, '', 0, 'OMEN 15-DH0105TX Black 1.png', 'theo'),
-(31, 'Lenovo IP330-4TID', 9800000, '', 0, 'IP330-4TID.jpg', 'admin');
+INSERT INTO `wishlist` (`id_barang`, `merk_barang`, `harga`, `gambar`, `nama_user`) VALUES
+(6, 'HP OMEN 15-DH0105TX', 23999000, 'OMEN 15-DH0105TX Black 1.png', 'admin'),
+(7, 'HP ENVY 13-AQ0018TX', 19999000, '13-AQ0018TX(Gold) 1.png', 'admin');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `shopcart`
+-- Indexes for table `wishlist`
 --
-ALTER TABLE `shopcart`
+ALTER TABLE `wishlist`
   ADD PRIMARY KEY (`id_barang`);
 
 --
@@ -61,10 +59,10 @@ ALTER TABLE `shopcart`
 --
 
 --
--- AUTO_INCREMENT for table `shopcart`
+-- AUTO_INCREMENT for table `wishlist`
 --
-ALTER TABLE `shopcart`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+ALTER TABLE `wishlist`
+  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
