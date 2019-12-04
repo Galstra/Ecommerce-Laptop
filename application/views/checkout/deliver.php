@@ -14,10 +14,10 @@
               <div class="box">
                 <form method="POST" action="<?= base_url('checkout/deliver/addDeliver') ?>">
                   <ul class="nav nav-pills nav-fill">
-                    <li class="nav-item"><a href="<?php echo base_url('checkout/address')?>" class="nav-link"> <i class="fa fa-map-marker"></i><br>Alamat</a></li>
-                    <li class="nav-item"><a href="<?php echo base_url('checkout/deliver')?>" class="nav-link active"><i class="fa fa-truck"></i><br>Metode Pengiriman</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link disabled"><i class="fa fa-money"></i><br>Metode Pembayaran</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link disabled"><i class="fa fa-eye"></i><br>Detail Pesanan</a></li>
+                    <li class="nav-item"><a href="<?php echo base_url('checkout/address')?>" class="nav-link"> <i class="fa fa-map-marker"></i><br>Address</a></li>
+                    <li class="nav-item"><a href="<?php echo base_url('checkout/deliver')?>" class="nav-link active"><i class="fa fa-truck"></i><br>Delivery Method</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link disabled"><i class="fa fa-money"></i><br>Payment Method</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link disabled"><i class="fa fa-eye"></i><br>Order Review</a></li>
                   </ul>    
                   <div class="content">
                     <div class="row">
