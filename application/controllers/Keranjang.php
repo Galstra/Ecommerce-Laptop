@@ -24,6 +24,7 @@
                 'merk_barang' => $list->merk_barang,
                 'harga' => $list->harga,
                 'nama_user'=> $this->session->nama,
+                'gambar_2'->$list->gambar_2
                 
             );
         }

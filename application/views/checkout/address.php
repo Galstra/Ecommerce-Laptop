@@ -25,13 +25,13 @@
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label for="firstname">Nama Depan</label>
-                          <input id="firstname" type="text" class="form-control" name="namaDepan">
+                          <input id="firstname" type="text" class="form-control" name="namaDepan"require>
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label for="lastname">Nama Belakang</label>
-                          <input id="lastname" type="text" class="form-control" name="namaBelakang">
+                          <input id="lastname" type="text" class="form-control" name="namaBelakang"require>
                         </div>
                       </div>
                     </div>
@@ -39,13 +39,13 @@
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label for="street">Alamat</label>
-                          <input id="street" type="text" class="form-control" name="alamat">
+                          <input id="street" type="text" class="form-control" name="alamat"require>
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label for="phone">Telephone</label>
-                          <input id="phone" type="text" class="form-control" name="telephone">
+                          <input id="phone" type="text" class="form-control" name="telephone"require>
                         </div>
                       </div>
                     </div>
@@ -53,19 +53,19 @@
                       <div class="col-sm-6 col-md-3">
                         <div class="form-group">
                           <label for="city">Kota</label>
-                          <input id="city" type="text" class="form-control" name="kota">
+                          <input id="city" type="text" class="form-control" name="kota"require>
                         </div>
                       </div>
                       <div class="col-sm-6 col-md-3">
                         <div class="form-group">
                           <label for="state">Provinsi</label>
-                          <input id="state" class="form-control" name="provinsi">
+                          <input id="state" class="form-control" name="provinsi"require>
                         </div>
                       </div>
                       <div class="col-sm-6">
                         <div class="form-group">
                           <label for="email">Email</label>
-                          <input id="email" type="text" class="form-control" name="email">
+                          <input id="email" type="email" class="form-control" name="email"require>
                         </div>
                       </div>
                     </div>

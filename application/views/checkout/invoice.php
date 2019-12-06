@@ -3,6 +3,9 @@
       <div id="content">
         <div class="container">
           <div class="row bar">
+            <div class="col-lg-9 centered">
+              <p class="text-muted lead centered"><h1>Invoice</h1></p>
+            </div>
             <div id="customer-order" class="col-lg-9">
               <div class="box">
                 <div class="table-responsive">

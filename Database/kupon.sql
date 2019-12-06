@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 04 Des 2019 pada 17.24
+-- Waktu pembuatan: 04 Des 2019 pada 17.23
 -- Versi server: 10.1.36-MariaDB
 -- Versi PHP: 5.6.38
 
@@ -25,49 +25,42 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `shopcart`
+-- Struktur dari tabel `kupon`
 --
 
-CREATE TABLE `shopcart` (
-  `id_barang` int(11) NOT NULL,
-  `merk_barang` varchar(120) NOT NULL,
-  `harga` int(200) NOT NULL,
-  `keterangan` text NOT NULL,
-  `stok` int(11) NOT NULL,
-  `gambar` text NOT NULL,
-  `nama_user` varchar(200) NOT NULL,
+CREATE TABLE `kupon` (
+  `id_koupon` int(11) NOT NULL,
   `no_kupon` varchar(120) NOT NULL,
   `ptngharga` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `shopcart`
+-- Dumping data untuk tabel `kupon`
 --
 
-INSERT INTO `shopcart` (`id_barang`, `merk_barang`, `harga`, `keterangan`, `stok`, `gambar`, `nama_user`, `no_kupon`, `ptngharga`) VALUES
-(31, 'Lenovo IP330-4TID', 9800000, '', 0, 'IP330-4TID.jpg', 'admin', '', 0),
-(40, 'HP ENVY 13-AQ0018TX', 19999000, '', 0, '13-AQ0018TX(Gold) 1.png', 'theo', 'boyganteng', 1000000),
-(45, 'Lenovo IP330-4TID', 9800000, '', 0, 'IP330-4TID.jpg', 'theo', 'boyganteng', 1000000);
+INSERT INTO `kupon` (`id_koupon`, `no_kupon`, `ptngharga`) VALUES
+(1, 'boyganteng', 1000000),
+(2, 'alvibucin', 5000000);
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `shopcart`
+-- Indeks untuk tabel `kupon`
 --
-ALTER TABLE `shopcart`
-  ADD PRIMARY KEY (`id_barang`);
+ALTER TABLE `kupon`
+  ADD PRIMARY KEY (`id_koupon`);
 
 --
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT untuk tabel `shopcart`
+-- AUTO_INCREMENT untuk tabel `kupon`
 --
-ALTER TABLE `shopcart`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+ALTER TABLE `kupon`
+  MODIFY `id_koupon` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
