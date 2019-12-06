@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2019 at 12:50 PM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.9
+-- Waktu pembuatan: 04 Des 2019 pada 16.06
+-- Versi server: 10.1.36-MariaDB
+-- Versi PHP: 5.6.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tabel_user`
+-- Struktur dari tabel `tabel_user`
 --
 
 CREATE TABLE `tabel_user` (
@@ -33,37 +33,44 @@ CREATE TABLE `tabel_user` (
   `nama` varchar(250) NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `role` tinyint(1) NOT NULL
+  `role` tinyint(1) NOT NULL,
+  `nama_depan` varchar(10) NOT NULL,
+  `nama_belakang` varchar(10) NOT NULL,
+  `alamat` varchar(50) NOT NULL,
+  `kota` varchar(20) NOT NULL,
+  `provinsi` varchar(20) NOT NULL,
+  `telephone` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tabel_user`
+-- Dumping data untuk tabel `tabel_user`
 --
 
-INSERT INTO `tabel_user` (`id`, `nama`, `email`, `password`, `role`) VALUES
-(1, 'admin', 'admin@gmail.com', '12345', 1),
-(2, 'theo', 'theo@gmail.com', '12345', 0),
-(4, 't.saputra01', '243', '3232', 0);
+INSERT INTO `tabel_user` (`id`, `nama`, `email`, `password`, `role`, `nama_depan`, `nama_belakang`, `alamat`, `kota`, `provinsi`, `telephone`) VALUES
+(1, 'admin', 'admin@gmail.com', '12345', 1, '', '', '', '', '', ''),
+(2, 'theo', 'theo@gmail.com', '12345', 0, '', '', '', '', '', ''),
+(4, 't.saputra01', '243', '3232', 0, '', '', '', '', '', ''),
+(5, '', 'f@gmail.com', '', 0, 'florin', 'karmina', 'rawa simprug', 'jakarta selatan', 'dki jakarta', '08123456');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tabel_user`
+-- Indeks untuk tabel `tabel_user`
 --
 ALTER TABLE `tabel_user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tabel_user`
+-- AUTO_INCREMENT untuk tabel `tabel_user`
 --
 ALTER TABLE `tabel_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
